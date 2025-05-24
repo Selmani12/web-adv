@@ -1,21 +1,80 @@
 <!DOCTYPE html>
-<html>
-    <head><title>web</title></head>
-    <body>
-        <form action="">
-            <label for="firstname">First Name</label><br>
-            <input type="text" id="firstname" name="firstname" placeholder="firstname"><br>
-            <label for="lastname">Last Name</label><br>
-            <input type="text" id="lastname" name="lastname" placeholder="lastname"><br>
-            <label for="email">email</label><br>
-            <input type="email" id="email" name="email" placeholder="email"><br>
-            <label for="password">Paswword</label><br>
-            <input type="password" id="password" name="password" placeholder="password"><br>
-            <input type="submit" id="submit" name="submit" placeholder="submit">
-        </form>
-        
-        
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Web Form</title>
+</head>
+<body>
+    <article> <h2>Html</h2></article>
+    <p>Lorem Ipsum is simply dummy text of the printin
+        g and typesetting industry. Lorem Ipsum has bee
+        n the industry's standard dummy text ever since the 1500s,
+         when an unknown printer took a galley of type a
+         nd scrambled it to make a type specimen book.</p>
+         <details>
+            <summary>Digital School</summary>
+            <p>Lorem Ipsum is simply dummy text of the printin
+        g and typesetting industry</p>
+           <figure>
+            <img src="img.png" alt="logo" width="200" height="200">
+            <figcaption>fig.-digital school</figcaption>
+           </figure>
+         
+         </details>
+  <form action="">
 
-        </form>
-    </body>
+    <label for="firstname">First Name</label><br />
+    <input type="text" id="firstname" name="firstname" placeholder="First name" value="Redon" readonly /><br />
+
+    <label for="lastname">Last Name</label><br />
+    <input type="text" id="lastname" name="lastname" placeholder="Last name" disabled/><br />
+
+    <label for="email">Email</label><br />
+    <input type="email" id="email" name="email" placeholder="Email"required /><br />
+
+    <label for="password">Password</label><br />
+    <input type="password" id="password" name="password" placeholder="Password"required size="30" /><br /><br />
+    <hr />
+
+    <fieldset>
+      <legend>Gender</legend>
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Male</label><br />
+
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label><br />
+    </fieldset>
+    <br /><hr />
+
+    <fieldset>
+      <legend>Select a hobby</legend>
+      <label for="hobbies">Hobbies</label><br />
+      <select id="hobbies" name="hobbies">
+        <option value="" disabled selected>Select a hobby</option>
+        <option value="gaming">Gaming</option>
+        <option value="reading">Reading</option>
+        <option value="cooking">Cooking</option>
+        <option value="traveling">Traveling</option>
+      </select>
+    </fieldset>
+    <br /><hr />
+
+    <fieldset>
+      <legend>Choose your hobbies (multiple)</legend>
+      <input type="checkbox" id="reading" name="hobbies" value="reading" />
+      <label for="reading">Reading</label><br />
+
+      <input type="checkbox" id="gaming" name="hobbies" value="gaming" />
+      <label for="gaming">Gaming</label><br />
+    </fieldset>
+    <br />
+
+    <input type="submit" id="submit" name="submit" value="Submit" />
+    <hr />
+
+    <label for="message">Message</label><br />
+    <textarea id="message" name="message" rows="15" cols="20" maxlength="50"></textarea><br /><br />
+    <hr />
+  </form>
+</body>
 </html>
